@@ -1,0 +1,8 @@
+<ul ng-init="vm.init();">
+  <li ng-repeat="photo in vm.cameos track by $index" data-width="{{photo.media.image_sizes.large.width}}" data-height="{{photo.media.image_sizes.large.height}}">
+    <figure>
+	  <img ng-src="{{photo.media.large}}" />
+      <figcaption>{{photo.nickname}}</figcaption>
+    </figure>
+  </li>
+</ul>

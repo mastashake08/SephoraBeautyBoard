@@ -1,0 +1,8 @@
+<ul>
+  <li ng-repeat="photo in vm.photos track by $index" data-width="{{photo.media.image_sizes.medium.width}}" data-height="{{photo.media.image_sizes.medium.height}}">
+    <figure>
+	  <img ng-src="{{photo.media.medium}}" />
+      <figcaption>{{photo.nickname}}</figcaption>
+    </figure>
+  </li>
+</ul>

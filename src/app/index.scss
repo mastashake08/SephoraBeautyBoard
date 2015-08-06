@@ -1,0 +1,20 @@
+/* Do not remove this comments bellow. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+// bower:scss
+// endbower
+@import "../../bower_components/meyer-reset/stylesheets/_meyer-reset";
+
+#container {
+  background: url("/assets/images/bg.jpg") no-repeat;
+  height: 3840px;
+  margin: 0 auto;
+  width: 1080px;
+  position: relative;
+  overflow: hidden;
+  background-size: 1080px 3840px;
+}
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
