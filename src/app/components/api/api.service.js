@@ -26,11 +26,8 @@
         var results = response.data.results;
 
         if(results.length > 0) {
-          // Need to uncomment this when its ready to add new photos
-          //$cookies.put('content_id', results[results.length - 1].content_id)
+          $cookies.put('content_id', results[results.length - 1].content_id)
         }
-
-        $cookies.remove('content_id');
 
         return results;
       }

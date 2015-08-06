@@ -4,6 +4,7 @@
   angular
     .module('sephora')
     .constant('config', {
+      initialDelay: 2500, // Initial delay to hold banner images
       secondaryTotal: 33, // Total number of small images
       secondaryPreloadCount: 10, // Number to preload
       secondaryImageCount: 10, // Number on screen
