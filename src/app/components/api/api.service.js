@@ -26,7 +26,7 @@
         var results = response.data.results;
 
         if(results.length > 0) {
-          $cookies.put('content_id', results[results.length - 1].content_id)
+          $cookies.put('content_id', results[results.length - 1].content_id);
         }
 
         return results;

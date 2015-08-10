@@ -110,7 +110,7 @@
               },
               o: {
                 duration: config.featuredAnimationSpeed,
-                easing: 'ease-in'
+                easing: 'easeOut'
               }
             };
 
@@ -125,7 +125,7 @@
               },
               o: {
                 duration: config.featuredAnimationSpeed,
-                easing: 'ease-in',
+                easing: 'easeOut',
                 delay: config.featuredAnimationDelay
               }
             };

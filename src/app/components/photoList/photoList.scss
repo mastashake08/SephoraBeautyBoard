@@ -18,8 +18,8 @@ photo-list {
     }
   }
   figure {
-    background: #e9ebed;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    background: #f6f6f6;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
     padding: 10px 10px 100px 10px;
     position: relative;
     img {
@@ -33,7 +33,7 @@ photo-list {
       right: 0;
       text-align: center;
       padding: 25px;
-      font: 30px/59px 'WOFF Sephora Sans BETA-Bold', sans-serif;
+      font: 30px/59px 'WOFF Sephora Sans BETA-Light', sans-serif;
     }
   }
 }
