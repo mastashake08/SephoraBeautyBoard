@@ -26,7 +26,7 @@
         var results = response.data.results.reverse();
 
         if(results.length > 0) {
-          $cookies.put('content_id', results[results.length - 1].content_id);
+          $cookies.put('content_id', results[results.length - 1].content_id, {'expires': 'Fri, 31 Dec 9999 23:59:59 GMT'});
         }
 
         return results;
