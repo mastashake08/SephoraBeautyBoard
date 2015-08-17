@@ -71,9 +71,9 @@
             num *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
 
             if(imgWidth < imgHeight) {
-              $el.css('width', config.secondaryImageSize);
+              $el.css('max-width', config.secondaryImageSize);
             } else {
-              $el.find('img').css('height', config.secondaryImageSize);
+              $el.find('img').css('max-height', config.secondaryImageSize);
             }
 
             $el.css('top', topPositions[positionIdx]);
@@ -88,7 +88,7 @@
               },
               o: {
                 duration: config.secondaryAnimationSpeed,
-                easing: 'ease-in',
+                easing: 'easeOut',
                 delay: delay
               }
             };

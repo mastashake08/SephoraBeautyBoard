@@ -27,7 +27,8 @@
 
       listeners.push($rootScope.$on('sephora:fadeBanner', function() {
         $element.velocity('fadeOut', {
-          duration: config.fadeTime
+          duration: config.fadeTime,
+          delay: config.initialDelay
         });
       }));
 

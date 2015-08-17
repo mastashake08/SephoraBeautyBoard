@@ -4,6 +4,19 @@
 // endbower
 @import "../../bower_components/meyer-reset/stylesheets/_meyer-reset";
 
+@font-face { font-family: 'WOFF Sephora Sans BETA-Light'; src: url('../fonts/SephoraSansBETA-Light.woff'); }
+@font-face { font-family: 'WOFF Sephora Sans BETA-Book'; src: url('../fonts/SephoraSansBETA-Book.woff'); }
+@font-face { font-family: 'WOFF Sephora Sans BETA-Medium'; src: url('../fonts/SephoraSansBETA-Medium.woff'); }
+@font-face { font-family: 'WOFF Sephora Sans BETA-Bold'; src: url('../fonts/SephoraSansBETA-Bold.woff'); }
+@font-face { font-family: 'WOFF2 Sephora Sans BETA-Light'; src: url('../fonts/SephoraSansBETA-Light.woff2'); }
+@font-face { font-family: 'WOFF2 Sephora Sans BETA-Book'; src: url('../fonts/SephoraSansBETA-Book.woff2'); }
+@font-face { font-family: 'WOFF2 Sephora Sans BETA-Medium'; src: url('../fonts/SephoraSansBETA-Medium.woff2'); }
+@font-face { font-family: 'WOFF2 Sephora Sans BETA-Bold'; src: url('../fonts/SephoraSansBETA-Bold.woff2'); }
+@font-face { font-family: 'EOT Sephora Sans BETA-Light'; src: url('../fonts/SephoraSansBETA-Light.eot'); }
+@font-face { font-family: 'EOT Sephora Sans BETA-Book'; src: url('../fonts/SephoraSansBETA-Book.eot'); }
+@font-face { font-family: 'EOT Sephora Sans BETA-Medium'; src: url('../fonts/SephoraSansBETA-Medium.eot'); }
+@font-face { font-family: 'EOT Sephora Sans BETA-Bold'; src: url('../fonts/SephoraSansBETA-Bold.eot'); }
+
 #container {
   background: url("/assets/images/bg.jpg") no-repeat;
   height: 3840px;

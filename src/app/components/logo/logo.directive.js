@@ -27,6 +27,7 @@
       listeners.push($rootScope.$on('sephora:fadeLogoIn', function() {
         $element.velocity('fadeIn', {
           duration: config.fadeTime,
+          delay: config.initialDelay,
           complete: function() {
             $rootScope.$broadcast('sephora:fadeLogoInComplete');
           }

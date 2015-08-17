@@ -4,6 +4,7 @@
   angular
     .module('sephora')
     .constant('config', {
+      initialDelay: 2500, // Initial delay to hold banner images
       secondaryTotal: 33, // Total number of small images
       secondaryPreloadCount: 10, // Number to preload
       secondaryImageCount: 10, // Number on screen
@@ -16,7 +17,7 @@
       featuredImageCount: 12, // Number of cameos to show on screen in each check
       featuredAnimationSpeed: 1000, // Speed of transition in ms
       featuredAnimationDelay: 5000, // Time to wait for intial photos in ms
-      refreshInterval: 180000, // 3 minutes
+      refreshInterval: 184000, // 3 minutes and 4 seconds
       refreshApiInterval: 30000, // 5 second only used by cameos
       fadeTime: 2500, // Time for fadein/fadeout in ms
       storeID: 'Powell Street', // Temporarily put in powell store
