@@ -6,7 +6,7 @@
     .factory('api', api);
 
   /** @ngInject */
-  function api(config, utils, $log, $http, $cookies) {
+  function api(config, utils, $log, $http/*, $cookies*/) {
     var apiHost = config.apiURL;
 
     var service = {
