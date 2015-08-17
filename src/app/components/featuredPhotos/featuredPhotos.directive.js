@@ -69,7 +69,8 @@
         var data = {
           total: config.featuredTotal,
           store_id: $rootScope.store_id,
-          since: $cookies.get('content_id')
+          //since: $cookies.get('content_id')
+          since: localStorage.getItem('content_id')
         };
 
         api.getCameo(data).then(function(response){
