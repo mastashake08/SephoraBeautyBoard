@@ -70,13 +70,17 @@
           total: config.featuredTotal,
           store_id: $rootScope.store_id,
           //since: $cookies.get('content_id')
-          since: localStorage.getItem('content_id')
+          since: localStorage.getItem($rootScope.store_id + 'content_id')
         };
 
         api.getCameo(data).then(function(response){
           preloader.preloadImages( response, config.apiImageSizeLarge ).then(
             function handleResolve( imageLocations ) {
-              preloadedCameos = preloadedCameos.concat(imageLocations);
+              for(var i = 0, length = imageLocations.length; i < length; i++) {
+                if(preloadedCameos.indexOf(imageLocations[i]) === -1) {
+                  preloadedCameos.push(imageLocations[i]);
+                }
+              }
             }
           );
         });
@@ -111,7 +115,10 @@
               },
               o: {
                 duration: config.featuredAnimationSpeed,
-                easing: 'easeOut'
+                easing: 'easeOut',
+                complete: function() {
+                  localStorage.setItem($rootScope.store_id + 'content_id', $el.data('content-id'));
+                }
               }
             };
 
