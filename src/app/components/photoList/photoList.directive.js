@@ -29,7 +29,7 @@
 
       vm.loadImages = function() {
         var data = {
-          total: config.secondaryTotal,
+          total: config.secondaryApiCount,
           store_id: $rootScope.store_id
         };
 
